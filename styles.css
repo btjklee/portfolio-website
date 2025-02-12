@@ -62,14 +62,17 @@ footer {
 
 .project-image {
     width: 100%; /* Make it responsive */
+    max-width: 500px; /* Set a max width */
+    margin: 0 auto; /* Center it */
     display: flex;
-    justify-content: center; /* Center the image */
+    justify-content: center;
     align-items: center;
     overflow: hidden; /* Prevent any overflow issues */
 }
 
 .project-image img {
-    max-width: 100%; /* Make sure it scales on smaller screens */
+    width: 100%; /* Make it fully responsive */
+    max-width: 100%; /* Scale it correctly */
     height: auto; /* Maintain aspect ratio */
     border-radius: 5px; /* Optional: Add rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
@@ -78,14 +81,19 @@ footer {
 /* Ensure projects display well on small screens */
 @media screen and (max-width: 768px) {
     section {
-        width: 95%; /* Increase width to take up more space */
+        width: 90%; /* Slightly reduce width for smaller screens */
     }
 
     .project {
         padding: 10px;
     }
 
+    .project-image {
+        max-width: 100%; /* Ensure it doesn't exceed the container */
+    }
+
     .project-image img {
-        max-width: 90%; /* Scale image within the container */
+        width: 100%; /* Force the image to fill the container */
+        max-width: 100%; /* Maintain responsiveness */
     }
 }
