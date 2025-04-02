@@ -1,70 +1,81 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>Ju Lee Lesesne | Portfolio</title>
-        <link rel = "stylesheet" href = "styles.css">
-        <link href = "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel = "stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href = "#about">About</a></li>
-                    <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <h1>Ju Lee Lesesne</h1>
-            <p>Aspiring Software Engineer | Python | Java | Flask | React</p>
-        </header>
+<html lang="en">
 
-        <section id = "about">
-            <h2>About Me</h2>
-            <p> I have a Bachelor’s degree in Computer Science and a passion for problem-solving and building real-world applications.</p>
-        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>Ju Lee Lesesne | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
 
-        <section id = "projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Job Tracker</h3>
-                <p>A Flask-based job tracking app hosted on Render, using PostgreSQL.</p>
-                
-                <!-- Wrap image inside a div -->
-                <div class="project-image">
-                    <img src="job-tracker-screenshot.png" alt="Job Tracker Screenshot">
-                </div>
-            
-                <p>
-                    🔗 <a href="https://flask-job-tracker.onrender.com" target="_blank">Live Demo</a> |
-                    📂 <a href="https://github.com/btjklee/flask-job-tracker" target="_blank">GitHub Repo</a>
-                </p>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Ju Lee Lesesne</h1>
+        <p>Computer Science Graduate | IT & Software Professional | Python | Flask | React | Java</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I have a Bachelor’s degree in Computer Science and a passion for solving problems through technology. I enjoy
+            working on real-world projects that involve both software development and IT systems, and I’m always eager
+            to learn and grow in the tech field.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Job Tracker</h3>
+            <p>A Flask-based job tracking app hosted on Render, using PostgreSQL.</p>
+
+            <!-- Wrap image inside a div -->
+            <div class="project-image">
+                <img src="job-tracker-screenshot.png" alt="Job Tracker Screenshot">
             </div>
-            <div class = "project">
-                <h3>E-commerce Website 🛒</h3>
-                <p>A React + Flask e-commerce site with a shopping cart, Stripe payments, and a REST API backend.</p>
-                
-                <img src="ecommerce-screenshot.png" alt="E-commerce Website Preview" width="600">
-                
-                <p>
-                  🔗 <a href="https://ecommerce-frontend-os7h.onrender.com" target="_blank">Live Demo</a> |
-                  💻 <a href="https://github.com/btjklee/ecommerce-frontend" target="_blank">Frontend Repo</a> |
-                  💻 <a href="https://github.com/btjklee/ecommerce-site" target="_blank">Backend Repo</a>
-                </p>
-                
-            </div>
-        </section>
 
-        <section id = "contact">
-            <h2>Contact</h2>
-            <p>Email: btjklee@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/btjklee">github.com/btjklee</a></p>
-            <p>LinkedIn: <a href = "#">https://linkedin.com/in/ju-l-bb0b20211</a></p>
-        </section>
-        
-        <footer>
-            <p>&copy; 2025 Ju Lee Lesesne. All rights reserved.</p>
-        </footer>
-    </body>
+            <p>
+                🔗 <a href="https://flask-job-tracker.onrender.com" target="_blank">Live Demo</a> |
+                📂 <a href="https://github.com/btjklee/flask-job-tracker" target="_blank">GitHub Repo</a>
+            </p>
+        </div>
+        <div class="project">
+            <h3>E-commerce Website 🛒</h3>
+            <p>A React + Flask e-commerce site with a shopping cart, Stripe payments, and a REST API backend.</p>
+
+            <div class="project-image">
+                <img src="ecommerce-screenshot.png" alt="E-commerce Website Preview">
+            </div>
+
+            <p>
+                🔗 <a href="https://ecommerce-frontend-os7h.onrender.com" target="_blank">Live Demo</a> |
+                💻 <a href="https://github.com/btjklee/ecommerce-frontend" target="_blank">Frontend Repo</a> |
+                💻 <a href="https://github.com/btjklee/ecommerce-site" target="_blank">Backend Repo</a>
+            </p>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: btjklee@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/btjklee">github.com/btjklee</a></p>
+        <p>LinkedIn: <a href="#">https://linkedin.com/in/ju-l-bb0b20211</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Ju Lee Lesesne. All rights reserved.</p>
+
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+
 </html>
